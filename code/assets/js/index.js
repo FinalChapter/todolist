@@ -44,9 +44,7 @@ $(function () {
            <input class="checkone" type="checkbox" ${
              el.is_select ? "checked" : ""
            } data-id="${el.msg_id}" />
-           <p data-id="${el.msg_id}">${el.msg}<input data-id="${
-        el.msg_id
-      }" value="${el.msg}">
+           <p data-id="${el.msg_id}">${el.msg}<input data-id="${el.msg_id}" value="${el.msg}">
            </p>
            <a class="del" data-id="${el.msg_id}">-</a>
        </li>`;
@@ -62,7 +60,7 @@ $(function () {
            <input class="checkone" type="checkbox" ${
              el.is_select ? "checked" : ""
            } data-id="${el.msg_id}" />
-           <p data-id="${el.msg_id}">${el.msg} <input></p>
+           <p data-id="${el.msg_id}">${el.msg} <input data-id="${el.msg_id}" value="${el.msg}"></p>
            <a class="del" data-id="${el.msg_id}">-</a>
        </li>`;
       }
